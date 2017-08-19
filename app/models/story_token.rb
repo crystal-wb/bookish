@@ -1,0 +1,2 @@
+class StoryToken < ApplicationRecord
+end

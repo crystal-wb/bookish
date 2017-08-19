@@ -1,0 +1,38 @@
+Login system
+    login-done
+    logout-done
+    recover password
+    change password-done
+Books (MUD style)
+book_table
+    user_id: integer
+    title: string
+    book_id: integer
+    description: string
+    book_url: string
+    author: string
+    rating: integer
+    has_many: friend_tokens
+    has_many: story_tokens
+    
+friend_token_table
+    name: string
+    book_id: integer
+    value: integer
+    
+story_token_table
+    name: string
+    book_id: integer
+    value: boolean
+    
+Save tokens from books to user accounts
+user_history_table
+    user_id: integer
+    has_many: books
+    has_many: friend_tokens
+    has_many: story_tokens
+    
+Allow access to story pages based on tokens collected
+Search for books
+Read books
+(later, rate books and add books)

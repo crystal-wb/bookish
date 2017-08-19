@@ -1,0 +1,2 @@
+class FriendToken < ApplicationRecord
+end
